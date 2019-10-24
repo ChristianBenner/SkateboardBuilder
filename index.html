@@ -12,6 +12,18 @@
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		
+		<style>
+			.design-row {
+				text-align: center;
+			}
+			
+			.design-image {
+				width:37%;
+				border: 2px solid black;
+				border-radius: 10px;
+			}
+		</style>
 	</head>
 	<body>
 		<!--- Home Page --->
@@ -119,7 +131,10 @@
 			<div data-role="main" class="ui-container">
 				<h1>Personas</h1>
 				<p>Personas text</p>
-				
+				<ul>
+					<li>Skaters</li>
+					<li>Skateboard Manufacturers</li>
+				</ul>
 			</div>
 			
 			<!--- Footer -->
@@ -150,8 +165,11 @@
 			<!--- Main/Body --->
 			<div data-role="main" class="ui-container">
 				<h1>Sketches</h1>
-				<p>Sketches text</p>
+				<p>These are the different sketches and designs for the application. You can select an individual sketch to enlarge it and view more information on it.</p>
 				
+				<div class="design-row">
+					<img class="design-image" src="images/board_customisation_page.png">
+				</div>
 			</div>
 			
 			<!--- Footer -->
