@@ -14,50 +14,19 @@
 		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 		
 		<style>
-			.design-row {
+			.image-container {
 				text-align: center;
 			}
 			
-			.design-image {
+			.image-scaled {
 				width:37%;
+				max-width:250px;
 				border: 2px solid black;
 				border-radius: 10px;
 			}
 		</style>
 	</head>
 	<body>
-		<!--- Home Page --->
-		<div data-role="page" id="home-page" data-theme="d">
-			<!--- Header --->
-			<div data-role="header">
-				<h1>Home</h1>
-				
-				<!--- Navigation Bar --->
-				<div data-role="navbar">
-					<ul>
-						<li><a href="#home-page" data-icon="home" data-transition="fade">Home</a></li>
-						<li><a href="#goals-page" data-icon="grid" data-transition="fade">Goals</a></li>
-						<li><a href="#personas-page" data-icon="user" data-transition="fade">Personas</a></li>
-						<li><a href="#sketches-page" data-icon="edit" data-transition="fade">Sketches</a></li>
-						<li><a href="#critique-page" data-icon="eye" data-transition="fade">Critique</a></li>
-						<li><a href="#technologies-page" data-icon="gear" data-transition="fade">Technologies</a></li>
-					</ul>
-				</div>
-			</div>
-			
-			<!--- Main/Body --->
-			<div data-role="main" class="ui-container">
-				<h1>Welcome</h1>
-				<p>This website explains my concept for a Skateboard builder mobile application. Please use the navigation bar to access the different sections.</p>
-				<p>The site is built using jQuery mobile</p>
-			</div>
-			
-			<!--- Footer -->
-			<div data-role="footer">
-				<h2>&copy; Christian Benner 2019</h2>
-			</div>
-		</div>
-		
 		<!--- Goals Page --->
 		<div data-role="page" id="goals-page" data-theme="d">
 			<!--- Header --->
@@ -67,7 +36,6 @@
 				<!--- Navigation Bar --->
 				<div data-role="navbar">
 					<ul>
-						<li><a href="#home-page" data-icon="home" data-transition="fade">Home</a></li>
 						<li><a href="#goals-page" data-icon="grid" data-transition="fade">Goals</a></li>
 						<li><a href="#personas-page" data-icon="user" data-transition="fade">Personas</a></li>
 						<li><a href="#sketches-page" data-icon="edit" data-transition="fade">Sketches</a></li>
@@ -118,7 +86,6 @@
 				<!--- Navigation Bar --->
 				<div data-role="navbar">
 					<ul>
-						<li><a href="#home-page" data-icon="home" data-transition="fade">Home</a></li>
 						<li><a href="#goals-page" data-icon="grid" data-transition="fade">Goals</a></li>
 						<li><a href="#personas-page" data-icon="user" data-transition="fade">Personas</a></li>
 						<li><a href="#sketches-page" data-icon="edit" data-transition="fade">Sketches</a></li>
@@ -165,7 +132,6 @@
 				<!--- Navigation Bar --->
 				<div data-role="navbar">
 					<ul>
-						<li><a href="#home-page" data-icon="home" data-transition="fade">Home</a></li>
 						<li><a href="#goals-page" data-icon="grid" data-transition="fade">Goals</a></li>
 						<li><a href="#personas-page" data-icon="user" data-transition="fade">Personas</a></li>
 						<li><a href="#sketches-page" data-icon="edit" data-transition="fade">Sketches</a></li>
@@ -180,18 +146,18 @@
 				<h1>Sketches</h1>
 				<p>These are the different sketches and designs for the application. You can select an individual sketch to enlarge it and view more information on it.</p>
 				
-				<div class="design-row">
-					<a href="#technologies-page"><img class="design-image" src="images/home_page_final.png"></a>
-					<img class="design-image" src="images/designs/home_page_final.png">
-					<img class="design-image" src="images/designs/deck_width_select.png">
-					<img class="design-image" src="images/designs/deck_design_select.png">
-					<img class="design-image" src="images/designs/truck_select.png">
-					<img class="design-image" src="images/designs/wheel_select.png">
-					<img class="design-image" src="images/designs/griptape_select.png">
-					<img class="design-image" src="images/designs/bearing_select.png">
-					<img class="design-image" src="images/designs/confirm_selection.png">
-					<img class="design-image" src="images/designs/component_overview.png">
-					<img class="design-image" src="images/designs/save_select.png">
+				<div class="image-container">
+					<!---<a href="#technologies-page"><img class="design-image" src="images/home_page_final.png"></a>--->
+					<img class="image-scaled" src="images/designs/home_page_final.png">
+					<img class="image-scaled" src="images/designs/deck_width_select.png">
+					<img class="image-scaled" src="images/designs/deck_design_select.png">
+					<img class="image-scaled" src="images/designs/truck_select.png">
+					<img class="image-scaled" src="images/designs/wheel_select.png">
+					<img class="image-scaled" src="images/designs/griptape_select.png">
+					<img class="image-scaled" src="images/designs/bearing_select.png">
+					<img class="image-scaled" src="images/designs/confirm_selection.png">
+					<img class="image-scaled" src="images/designs/component_overview.png">
+					<img class="image-scaled" src="images/designs/save_select.png">
 				</div>
 			</div>
 			
@@ -210,7 +176,6 @@
 				<!--- Navigation Bar --->
 				<div data-role="navbar">
 					<ul>
-						<li><a href="#home-page" data-icon="home" data-transition="fade">Home</a></li>
 						<li><a href="#goals-page" data-icon="grid" data-transition="fade">Goals</a></li>
 						<li><a href="#personas-page" data-icon="user" data-transition="fade">Personas</a></li>
 						<li><a href="#sketches-page" data-icon="edit" data-transition="fade">Sketches</a></li>
@@ -244,25 +209,25 @@
 					<li><b>No brand components:</b> You cannot select different components e.g. different bearings, wheels, decks or trucks. The customisation is mostly colour.</li>
 					<li><b>Inability to purchase components: </b> After designing the skateboard you cannot purchase any of the components. This means you cannot build the design in real life and the app is classed as more of a game than a utility.</li>
 				</ul>
-				<div class="design-row">
-					<img class="design-image" src="images/screenshots/1.jpg">
-					<img class="design-image" src="images/screenshots/2.jpg">
-					<img class="design-image" src="images/screenshots/3.jpg">
-					<img class="design-image" src="images/screenshots/4.jpg">
-					<img class="design-image" src="images/screenshots/5.jpg">
-					<img class="design-image" src="images/screenshots/6.jpg">
-					<img class="design-image" src="images/screenshots/7.jpg">
-					<img class="design-image" src="images/screenshots/8.jpg">
-					<img class="design-image" src="images/screenshots/9.jpg">
-					<img class="design-image" src="images/screenshots/10.jpg">
+				<div class="image-container">
+					<img class="image-scaled" src="images/screenshots/1.jpg">
+					<img class="image-scaled" src="images/screenshots/2.jpg">
+					<img class="image-scaled" src="images/screenshots/3.jpg">
+					<img class="image-scaled" src="images/screenshots/4.jpg">
+					<img class="image-scaled" src="images/screenshots/5.jpg">
+					<img class="image-scaled" src="images/screenshots/6.jpg">
+					<img class="image-scaled" src="images/screenshots/7.jpg">
+					<img class="image-scaled" src="images/screenshots/8.jpg">
+					<img class="image-scaled" src="images/screenshots/9.jpg">
+					<img class="image-scaled" src="images/screenshots/10.jpg">
 				</div>
 				
-				<p>Text</p>
-				<div class="design-row">
-					<img class="design-image" src="images/screenshots/11.jpg">
-					<img class="design-image" src="images/screenshots/12.jpg">
-					<img class="design-image" src="images/screenshots/13.jpg">
-					<img class="design-image" src="images/screenshots/14.jpg">
+				<p>The second application is called board designer. It is by the same developer as the first application and it is essentially an updated/upgraded version. It allows you to design on more types of boards such as snowboards, surfboards, wakeboards and skimboards. This is better than the first one because of the amount of different types of boards you can customise however the functionality in customising a skateboard remains the same. Assessed against my target audience, this upgraded version of the application is no better than the first.</p>
+				<div class="image-container">
+					<img class="image-scaled" src="images/screenshots/11.jpg">
+					<img class="image-scaled" src="images/screenshots/12.jpg">
+					<img class="image-scaled" src="images/screenshots/13.jpg">
+					<img class="image-scaled" src="images/screenshots/14.jpg">
 				</div>
 			</div>
 			
@@ -281,7 +246,6 @@
 				<!--- Navigation Bar --->
 				<div data-role="navbar">
 					<ul>
-						<li><a href="#home-page" data-icon="home" data-transition="fade">Home</a></li>
 						<li><a href="#goals-page" data-icon="grid" data-transition="fade">Goals</a></li>
 						<li><a href="#personas-page" data-icon="user" data-transition="fade">Personas</a></li>
 						<li><a href="#sketches-page" data-icon="edit" data-transition="fade">Sketches</a></li>
@@ -294,7 +258,7 @@
 			<!--- Main/Body --->
 			<div data-role="main" class="ui-container">
 				<h1>Technologies</h1>
-				<p>To produce my application I am going to use</p>
+				<p>To produce my application I am going to use multiple different technologies. The list of technologies is:</p>
 				
 			</div>
 			
